@@ -1,6 +1,6 @@
 # fms5-clearer
 
-## Getting Started
+## Getting Started (Ubuntu)
 0. Install Docker  
    Here's the [official guide.](https://docs.docker.com/get-docker/)  
 1. Clone this repository
@@ -24,6 +24,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./sample/input/testkernel.png">  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input image / output image  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./sample/input/test255_800.png" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./sample/output/output_img.png" width="300">
+
+## Getting Started (Windows)
+For windows, you might need to install git-bash, and then just follow the above steps for Ubuntu.  
+You might encounter some error message like "the input device is not a TTY. If you are using mintty, try prefixing the command with 'winpty'" while running step-3.  
+If so, edit exec_cntnr.sh, add 'winpty' before the command:
+```
+winpty docker exec -it fms5_cntnr bash  
+```
+This "might" help to resolve the error according to [this stackoverflow page.](https://stackoverflow.com/questions/48623005/docker-error-the-input-device-is-not-a-tty-if-you-are-using-mintty-try-prefi)
+
 
 
 ## Running Your Own Data from test.py
