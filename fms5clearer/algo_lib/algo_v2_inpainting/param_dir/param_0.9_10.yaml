@@ -1,0 +1,4 @@
+sat_threshold: 0.9
+dilate_kernel: !!python/tuple [10,10]
+dilate_kernel2: !!python/tuple [80,80]
+bm3d_sigma: 0.0025

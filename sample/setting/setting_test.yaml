@@ -1,0 +1,10 @@
+algo:
+    algo_name: AlgoV2_inp
+    algo_param_path: ./fms5-clearer/fms5clearer/algo_lib/algo_v2_inpainting/param_dir/param_0.9_10.yaml
+outer:
+    if_tile_gen: False
+    border: 200
+    content_patch_w: 800
+    content_patch_h: 800
+#    img_range: 4095
+    img_range: 255
